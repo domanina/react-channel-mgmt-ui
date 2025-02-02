@@ -1,0 +1,16 @@
+stages:
+  - build and test
+  - deploy test
+  - deploy stage
+  - deploy production
+  - notification
+
+notify:
+  stage: notification
+  when: on_success
+  only:
+    - tags
+  variables:
+    DEPLOYMENT_ENVIRONMENT: $prd_env
+    CHANNEL: '_dpl_'
+  extends: .dpl_notification

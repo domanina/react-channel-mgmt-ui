@@ -1,0 +1,80 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid white;
+  padding: 0.4em;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+  background: #303038;
+  color: white;
+}
+
+.custom-table th {
+  background: #666;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.custom-table td:first-child {
+  white-space: nowrap;
+}
+
+.description-cell {
+  max-width: 35ch;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.expand-button:hover {
+  color: #6c757d;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.edit {
+  display: none;
+}
+
+.editing .edit {
+  display: block;
+}
+
+.editing .view {
+  display: none;
+}
+
+.action-column {
+  width: 90px;
+  text-align: center;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
